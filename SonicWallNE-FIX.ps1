@@ -24,9 +24,10 @@ $url = "http://software.sonicwall.com/Netextender/Netextender%20Cleaner%20Tool.z
 $output = "$PSScriptRoot\cleaner.zip"
 Invoke-WebRequest -Uri $url -OutFile $output
 
-#download installation file from https://software.sonicwall.com/NetExtender/NetExtender-10.2.315.MSI
+#download installation file from https://software.sonicwall.com/NetExtender/NetExtender-x64-10.2.322.MSI
+#this may not be the most up to date file. Please check https://www.sonicwall.com/products/remote-access/vpn-clients/ for up to date install link
 Write-Host "Downloading SonicWall NetExtender Installation"
-$url = "https://software.sonicwall.com/NetExtender/NetExtender-10.2.315.MSI"
+$url = "https://software.sonicwall.com/NetExtender/NetExtender-x64-10.2.322.MSI"
 $output = "$PSScriptRoot\NetExtender.msi"
 Invoke-WebRequest -Uri $url -OutFile $output
 
